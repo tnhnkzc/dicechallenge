@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/ab330baa46.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+  </head>
+  <body class="bg-slate-700" onload="randomImg(), randomImg2(), winner()">
+    <div class="grid grid-rows-2 grid-flow-col place-content-center gap-4">
+      <div>
+        <h1 class="text-red-500 text-7xl">Welcome to the Dice Game!</h1>
+      </div>
+      <div class="flex justify-center flex-col">
+        <h2 class="text-4xl text-cyan-400 text-center">
+          Click on the button to roll the dices.
+        </h2>
+        <button
+          class="border-2 border-red-500 rounded-xl w-xl bg-red-500 mt-4 mb-4 text-4xl text-white text-center font-mono"
+          onClick="window.location.reload();"
+        >
+          Gamble away!
+        </button>
+        <h3 class="text-4xl text-cyan-400 text-center">Who is the winner?</h3>
+      </div>
+    </div>
+    <div class="flex justify-center gap-16">
+      <div>
+        <p class="text-2xl text-orange-600">Player 1</p>
+        <img id="dice1" src="images/dice6.png" alt="" class="w-4/5" />
+      </div>
+      <div>
+        <p class="text-2xl text-orange-600">Player 2</p>
+        <img id="dice2" src="images/dice6.png" alt="" class="w-4/5" />
+      </div>
+    </div>
+    <footer
+      class="flex flex-col justify-center border-2 border-red-500 rounded-xl w-full bg-red-500 text-center fixed right-0 left-0 bottom-0"
+    >
+      <p class="mt-4">Made by Tunahan Kuzucu</p>
+      <div class="flex flex-row justify-center gap-4 mb-4">
+        <a
+          class="socialmedia"
+          href="https://www.facebook.com/tnhn.kzc"
+          target="_blank"
+          ><i class="fab fa-facebook-f w-5"></i
+        ></a>
+        <a
+          class="socialmedia"
+          href="https://www.instagram.com/tunahankuzucuu/?hl=tr"
+          target="_blank"
+          ><i class="fab fa-instagram w-5"></i
+        ></a>
+        <a
+          class="socialmedia"
+          href="https://twitter.com/tunahankuzucu"
+          target="_blank"
+          ><i class="fab fa-twitter w-5"></i
+        ></a>
+        <a
+          class="socialmedia"
+          href="https://www.linkedin.com/in/tunahankuzucu/"
+          target="_blank"
+          ><i class="fab fa-linkedin w-5"></i
+        ></a>
+        <a href="https://github.com/tnhnkzc"
+          ><img
+            class="w-5"
+            src="https://img.icons8.com/ios-glyphs/30/000000/github.png"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
